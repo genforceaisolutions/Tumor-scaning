@@ -1,69 +1,156 @@
-# Welcome to your Lovable project
+# Tumor Scan Portal
 
-## Project info
+Tumor Scan Portal is a web-based application designed to assist in **uploading, analyzing, and visualizing medical scan images** for tumor detection. The system provides a simple interface for users to upload scans and view AI-assisted analysis results, making it suitable for academic, research, and demo purposes.
 
-**URL**: https://lovable.dev/projects/dadfd90d-f9bc-46d7-b3ec-aae4974f99e9
+> ⚠️ Disclaimer: This project is for **educational and research use only**. It is not a certified medical diagnostic tool.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 🚀 Features
 
-**Use Lovable**
+* Upload tumor scan images (MRI / CT / X-ray)
+* Image preview before processing
+* AI-assisted tumor detection
+* Visual result display
+* Clean, minimal, and responsive UI
+* Fast processing workflow
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/dadfd90d-f9bc-46d7-b3ec-aae4974f99e9) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🧠 Application Flow
 
-**Use your preferred IDE**
+1. User uploads a scan image
+2. Image is validated and preprocessed
+3. AI model analyzes the scan
+4. Detected regions are highlighted
+5. Result is displayed to the user
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🛠 Tech Stack
 
-Follow these steps:
+### Frontend
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
+* React (Vite)
+* TypeScript
+* Tailwind CSS
+* Modern component-based architecture
+
+### Backend / Processing
+
+* Python (ML inference)
+* OpenCV (image preprocessing)
+* REST API for model communication
+
+---
+
+## 📁 Project Structure
+
+```
+tumor-scan-portal-main/
+│
+├── public/                # Static assets
+├── src/                   # Frontend source code
+│   ├── components/        # UI components
+│   ├── pages/             # Page views
+│   ├── services/          # API calls
+│   └── utils/             # Helper functions
+│
+├── backend/               # ML & API backend
+│   ├── model/             # Trained model files
+│   ├── preprocessing/     # Image preprocessing logic
+│   └── app.py             # Backend server
+│
+├── index.html
+├── package.json
+└── README.md
+```
+
+---
+
+## ⚙️ Installation & Local Setup
+
+### 1. Clone the repository
+
+```bash
 git clone <YOUR_GIT_URL>
+cd tumor-scan-portal-main
+```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### 2. Install frontend dependencies
 
-# Step 3: Install the necessary dependencies.
-npm i
+```bash
+npm install
+```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### 3. Run frontend
+
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Frontend will run at:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```
+http://localhost:5173
+```
 
-**Use GitHub Codespaces**
+### 4. Run backend (if included)
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```bash
+cd backend
+pip install -r requirements.txt
+python app.py
+```
 
-## What technologies are used for this project?
+---
 
-This project is built with .
+## 📦 Build for Production
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+```bash
+npm run build
+```
 
-## How can I deploy this project?
+Output:
 
-Simply open [Lovable](https://lovable.dev/projects/dadfd90d-f9bc-46d7-b3ec-aae4974f99e9) and click on Share -> Publish.
+```
+dist/
+```
 
-## I want to use a custom domain - is that possible?
+---
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+## 🎯 Use Cases
+
+* College mini / final year project
+* Medical image processing demos
+* AI healthcare research
+* Portfolio project for ML / Fullstack roles
+
+---
+
+## ⚠️ Disclaimer
+
+This application does **not provide medical diagnosis**. Always consult certified medical professionals for clinical decisions.
+
+---
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a new branch
+3. Commit your changes
+4. Open a pull request
+
+---
+
+## 📄 License
+
+MIT License
+
+---
+
+## 👤 Author
+
+**Gokul Prasanth**
+
+If you find this project useful, give it a ⭐ on GitHub.
